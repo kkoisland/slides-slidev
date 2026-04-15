@@ -1,9 +1,12 @@
 {
 	"permissions": {
+		"defaultMode": "bypassPermissions",
 		"allow": [
 			"Bash(pnpm:*)",
 			"Bash(nvm:*)",
 			"Bash(mkdir:*)",
+			"Bash(cp:*)",
+			"Bash(node:*)",
 			"Bash(rm:*)",
 			"Bash(cd:*)",
 			"Read",
