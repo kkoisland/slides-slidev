@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Slidev Start 1",
+		"author": "Keiko Higuchi",
+		"date": "2026-04-13",
+		"description": "",
+		"thumbnail": "",
+		"url": "/slides/slidev-starter-1"
+	},
+	{
+		"title": "Test Slide",
+		"author": "Keiko Higuchi",
+		"date": "2026-04-13",
+		"description": "",
+		"thumbnail": "og-image.png",
+		"url": "/slides/slides-test"
+	}
+]
