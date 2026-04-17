@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "bash scripts/dev.sh",
 		"dev:app": "vite",
-		"build": "node scripts/generate-slides.mjs && bash scripts/build-slides.sh && tsc -b && vite build",
+		"build": "node scripts/generate-slides.mjs && tsc -b && vite build && bash scripts/build-slides.sh",
 		"preview": "vite preview",
 		"generate": "node scripts/generate-slides.mjs",
 		"slidev:test": "slidev slides/slides-test/slides.md",
