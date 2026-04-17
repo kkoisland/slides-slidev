@@ -44,26 +44,38 @@ function App() {
 				</div>
 			</header>
 			<ul className="divide-y divide-[var(--border)]">
-				{slides.map((slide) => (
-					<li key={slide.url} className="flex gap-4 py-4">
-						{showThumbnails && (
-							<div className="w-32 h-20 bg-[var(--border)] rounded flex-shrink-0" />
-						)}
-						<div className="flex flex-col justify-center gap-1">
-							<p className="text-base font-medium text-[var(--text-h)]">
-								{slide.title}
-							</p>
-							<p className="text-sm text-[var(--text)]">
-								{slide.author} · {slide.date}
-							</p>
-							{slide.description && (
-								<p className="text-sm text-[var(--text)]">
-									{slide.description}
-								</p>
-							)}
-						</div>
-					</li>
-				))}
+				{slides.map((slide) => {
+					const href = import.meta.env.DEV
+						? `http://localhost:${slide.port}`
+						: slide.url;
+					return (
+						<li key={slide.url}>
+							<a
+								href={href}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="flex gap-4 py-4 hover:opacity-70"
+							>
+								{showThumbnails && (
+									<div className="w-32 h-20 bg-[var(--border)] rounded flex-shrink-0" />
+								)}
+								<div className="flex flex-col justify-center gap-1">
+									<p className="text-base font-medium text-[var(--text-h)]">
+										{slide.title}
+									</p>
+									<p className="text-sm text-[var(--text)]">
+										{slide.author} · {slide.date}
+									</p>
+									{slide.description && (
+										<p className="text-sm text-[var(--text)]">
+											{slide.description}
+										</p>
+									)}
+								</div>
+							</a>
+						</li>
+					);
+				})}
 			</ul>
 		</div>
 	);
