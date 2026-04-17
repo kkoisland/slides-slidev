@@ -67,3 +67,19 @@ ${slidevCommands}
 
 writeFileSync(resolve("scripts/dev.sh"), devSh);
 console.log("Generated scripts/dev.sh");
+
+// Generate build-slides.sh
+const base = "/slides-slidev/";
+const buildCommands = slidesWithPort
+	.map((slide) => {
+		const dir = slide.url.replace("/slides/", "");
+		return `  slidev build slides/${dir}/slides.md --base ${base}slides/${dir}/ --out dist/slides/${dir}`;
+	})
+	.join("\n");
+
+const buildSh = `#!/bin/bash
+${buildCommands}
+`;
+
+writeFileSync(resolve("scripts/build-slides.sh"), buildSh);
+console.log("Generated scripts/build-slides.sh");

@@ -45,9 +45,10 @@ function App() {
 			</header>
 			<ul className="divide-y divide-[var(--border)]">
 				{slides.map((slide) => {
+					const dirName = slide.url.split("/slides/")[1];
 					const href = import.meta.env.DEV
 						? `http://localhost:${slide.port}`
-						: slide.url;
+						: `${import.meta.env.BASE_URL}slides/${dirName}/`;
 					return (
 						<li key={slide.url}>
 							<a

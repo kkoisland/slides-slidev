@@ -2,6 +2,8 @@
 
 A slide list app built with React + Vite, managing Slidev presentations in one repository.
 
+🌐 **[https://www.kkoisland.com/slides-slidev/](https://www.kkoisland.com/slides-slidev/)**
+
 ## Tech Stack
 
 - React + TypeScript + Vite
@@ -14,14 +16,9 @@ A slide list app built with React + Vite, managing Slidev presentations in one r
 
 ```bash
 pnpm i
-pnpm dev       # start React app at http://localhost:5173
-```
-
-## Slides
-
-```bash
-pnpm slidev:test      # slides/slides-test/slides.md
-pnpm slidev:starter   # slides/slidev-starter-1/slides.md
+pnpm generate  # generate slides.json and scripts/dev.sh
+pnpm dev       # start React app + all Slidev presentations
+pnpm dev:app   # start React app only
 ```
 
 ## Adding a New Slide
@@ -39,10 +36,10 @@ description: ""
 ```
 
 3. Add `public/og-image.png` as thumbnail (optional)
-4. Run `pnpm generate` to update `slides.json`
+4. Run `pnpm generate` to update `slides.json` and `scripts/dev.sh`
 
 ## Build
 
 ```bash
-pnpm build   # generates slides.json then builds React app
+pnpm build   # generates slides.json, builds Slidev presentations and React app
 ```
