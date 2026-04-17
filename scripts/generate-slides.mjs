@@ -45,5 +45,25 @@ for (const dirName of readdirSync(slidesDir)) {
 // Sort by date descending (newest first)
 slides.sort((a, b) => (a.date < b.date ? 1 : -1));
 
-writeFileSync(outputPath, `${JSON.stringify(slides, null, "\t")}\n`);
-console.log(`Generated slides.json with ${slides.length} slides`);
+// Assign dev ports starting from 3030
+const slidesWithPort = slides.map((slide, i) => ({ ...slide, port: 3030 + i }));
+
+writeFileSync(outputPath, `${JSON.stringify(slidesWithPort, null, "\t")}\n`);
+console.log(`Generated slides.json with ${slidesWithPort.length} slides`);
+
+// Generate dev.sh
+const slidevCommands = slidesWithPort
+	.map((slide) => {
+		const dir = slide.url.replace("/slides/", "");
+		return `  "slidev slides/${dir}/slides.md --port ${slide.port} --open false"`;
+	})
+	.join(" \\\n");
+
+const devSh = `#!/bin/bash
+concurrently \\
+  "vite" \\
+${slidevCommands}
+`;
+
+writeFileSync(resolve("scripts/dev.sh"), devSh);
+console.log("Generated scripts/dev.sh");

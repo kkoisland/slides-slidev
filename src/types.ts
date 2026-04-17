@@ -5,4 +5,5 @@ export interface Slide {
 	description: string;
 	thumbnail: string;
 	url: string;
+	port: number;
 }
