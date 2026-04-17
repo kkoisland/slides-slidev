@@ -32,6 +32,9 @@ jobs:
       - run: pnpm install
       - run: pnpm build
 
+      - name: List dist HTML files
+        run: find dist -name "*.html"
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
