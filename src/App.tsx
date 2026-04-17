@@ -12,7 +12,7 @@ function App() {
 	});
 
 	useEffect(() => {
-		fetch("/slides.json")
+		fetch(`${import.meta.env.BASE_URL}slides.json`)
 			.then((res) => res.json())
 			.then(setSlides);
 	}, []);
