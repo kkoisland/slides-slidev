@@ -4,12 +4,16 @@ import {
 	readdirSync,
 	statSync,
 	existsSync,
+	mkdirSync,
+	copyFileSync,
 } from "node:fs";
 import { join, resolve } from "node:path";
 import matter from "gray-matter";
 
 const slidesDir = resolve("slides");
 const outputPath = resolve("public/slides.json");
+const thumbnailsDir = resolve("public/thumbnails");
+mkdirSync(thumbnailsDir, { recursive: true });
 
 const slides = [];
 
@@ -22,7 +26,13 @@ for (const dirName of readdirSync(slidesDir)) {
 		const content = readFileSync(slidesPath, "utf-8");
 		const { data } = matter(content);
 
-		const hasThumbnail = existsSync(join(dirPath, "public", "og-image.png"));
+		const srcThumbnail = join(dirPath, "public", "thumbnail.svg");
+		let thumbnail = "";
+		if (existsSync(srcThumbnail)) {
+			copyFileSync(srcThumbnail, join(thumbnailsDir, `${dirName}.svg`));
+			thumbnail = `thumbnails/${dirName}.svg`;
+		}
+
 		const rawDate = data.date;
 		const date =
 			rawDate instanceof Date
@@ -34,7 +44,7 @@ for (const dirName of readdirSync(slidesDir)) {
 			author: data.author ?? "",
 			date,
 			description: data.description ?? "",
-			thumbnail: hasThumbnail ? "og-image.png" : "",
+			thumbnail,
 			url: `/slides/${dirName}`,
 		});
 	} catch {
