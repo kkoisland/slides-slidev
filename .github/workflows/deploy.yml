@@ -33,7 +33,7 @@ jobs:
       - run: pnpm build
 
       - name: List dist HTML files
-        run: find dist -name "*.html"
+        run: find . -name "*.html" -not -path "*/node_modules/*"
 
       - uses: actions/upload-pages-artifact@v3
         with:

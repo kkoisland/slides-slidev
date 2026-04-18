@@ -73,12 +73,13 @@ const base = "/slides-slidev/";
 const buildCommands = slidesWithPort
 	.map((slide) => {
 		const dir = slide.url.replace("/slides/", "");
-		return `  pnpm exec slidev build slides/${dir}/slides.md --base ${base}slides/${dir}/ --out dist/slides/${dir}`;
+		return `  pnpm exec slidev build slides/${dir}/slides.md --base ${base}slides/${dir}/ --out $ROOT/dist/slides/${dir}`;
 	})
 	.join("\n");
 
 const buildSh = `#!/bin/bash
 set -e
+ROOT=$(pwd)
 ${buildCommands}
 `;
 
