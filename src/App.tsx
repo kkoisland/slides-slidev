@@ -58,7 +58,19 @@ function App() {
 								className="flex gap-4 py-4 hover:opacity-70"
 							>
 								{showThumbnails && (
-									<div className="w-32 h-20 bg-[var(--border)] rounded flex-shrink-0" />
+									slide.thumbnail ? (
+										<div
+											className="w-32 h-20 rounded flex-shrink-0 bg-[var(--bg)] border border-[var(--border)]"
+											style={{
+												backgroundImage: `url(${import.meta.env.BASE_URL}${slide.thumbnail})`,
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+												backgroundPosition: "center",
+											}}
+										/>
+									) : (
+										<div className="w-32 h-20 bg-[var(--border)] rounded flex-shrink-0" />
+									)
 								)}
 								<div className="flex flex-col justify-center gap-1">
 									<p className="text-base font-medium text-[var(--text-h)]">
