@@ -1,12 +1,21 @@
 [
 	{
+		"title": "stable-context-map",
+		"author": "Keiko Higuchi",
+		"date": "2026-04-18",
+		"description": "A Map App That Preserves Your Viewing Context",
+		"thumbnail": "thumbnails/stable-context-map.png",
+		"url": "/slides/stable-context-map",
+		"port": 3030
+	},
+	{
 		"title": "Slidev Start 1",
 		"author": "Keiko Higuchi",
 		"date": "2026-04-13",
 		"description": "",
 		"thumbnail": "",
 		"url": "/slides/slidev-starter-1",
-		"port": 3030
+		"port": 3031
 	},
 	{
 		"title": "Test Slide",
@@ -15,6 +24,6 @@
 		"description": "",
 		"thumbnail": "thumbnails/slides-test.svg",
 		"url": "/slides/slides-test",
-		"port": 3031
+		"port": 3032
 	}
 ]
