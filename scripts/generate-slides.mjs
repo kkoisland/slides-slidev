@@ -13,6 +13,7 @@ import matter from "gray-matter";
 const slidesDir = resolve("slides");
 const outputPath = resolve("public/slides.json");
 const thumbnailsDir = resolve("public/thumbnails");
+const templateAvatarPath = resolve("slides/_template/public/avatar.png");
 mkdirSync(thumbnailsDir, { recursive: true });
 
 const slides = [];
@@ -20,6 +21,7 @@ const slides = [];
 for (const dirName of readdirSync(slidesDir)) {
 	const dirPath = join(slidesDir, dirName);
 	if (!statSync(dirPath).isDirectory()) continue;
+	if (dirName.startsWith("_")) continue;
 
 	const slidesPath = join(dirPath, "slides.md");
 	try {
@@ -27,6 +29,11 @@ for (const dirName of readdirSync(slidesDir)) {
 		const { data } = matter(content);
 
 		const publicDir = join(dirPath, "public");
+		mkdirSync(publicDir, { recursive: true });
+		if (existsSync(templateAvatarPath)) {
+			copyFileSync(templateAvatarPath, join(publicDir, "avatar.png"));
+		}
+
 		const thumbnailFile = existsSync(publicDir)
 			? readdirSync(publicDir).find((f) => f.match(/^thumbnail\./))
 			: null;

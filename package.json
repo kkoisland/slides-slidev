@@ -9,6 +9,7 @@
 		"build": "node scripts/generate-slides.mjs && tsc -b && vite build && bash scripts/build-slides.sh",
 		"preview": "vite preview",
 		"generate": "node scripts/generate-slides.mjs",
+		"new-slide": "node scripts/new-slide.mjs",
 		"slidev:test": "slidev slides/slides-test/slides.md",
 		"slidev:starter": "slidev slides/slidev-starter-1/slides.md",
 		"biome:check": "biome check .",

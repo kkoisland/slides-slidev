@@ -12,7 +12,7 @@
 		"title": "Slidev Start 1",
 		"author": "Keiko Higuchi",
 		"date": "2026-04-13",
-		"description": "",
+		"description": "Slidev starter template from github.com/leochiu-a/slidev-workspace-starter",
 		"thumbnail": "",
 		"url": "/slides/slidev-starter-1",
 		"port": 3031
@@ -21,7 +21,7 @@
 		"title": "Test Slide",
 		"author": "Keiko Higuchi",
 		"date": "2026-04-13",
-		"description": "",
+		"description": "excalidraw-animate and excalidraw-claymate demo",
 		"thumbnail": "thumbnails/slides-test.svg",
 		"url": "/slides/slides-test",
 		"port": 3032

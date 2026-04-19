@@ -4,7 +4,7 @@ background: /background.webp
 title: Slidev Start 1
 author: Keiko Higuchi
 date: "2026-04-13"
-description: ""
+description: "Slidev starter template from github.com/leochiu-a/slidev-workspace-starter"
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.

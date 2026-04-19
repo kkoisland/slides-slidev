@@ -3,7 +3,7 @@ theme: default
 title: Test Slide
 author: Keiko Higuchi
 date: "2026-04-13"
-description: ""
+description: "excalidraw-animate and excalidraw-claymate demo"
 ---
 
 # title
