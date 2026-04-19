@@ -26,11 +26,18 @@ for (const dirName of readdirSync(slidesDir)) {
 		const content = readFileSync(slidesPath, "utf-8");
 		const { data } = matter(content);
 
-		const srcThumbnail = join(dirPath, "public", "thumbnail.svg");
+		const publicDir = join(dirPath, "public");
+		const thumbnailFile = existsSync(publicDir)
+			? readdirSync(publicDir).find((f) => f.match(/^thumbnail\./))
+			: null;
 		let thumbnail = "";
-		if (existsSync(srcThumbnail)) {
-			copyFileSync(srcThumbnail, join(thumbnailsDir, `${dirName}.svg`));
-			thumbnail = `thumbnails/${dirName}.svg`;
+		if (thumbnailFile) {
+			const ext = thumbnailFile.split(".").pop();
+			copyFileSync(
+				join(publicDir, thumbnailFile),
+				join(thumbnailsDir, `${dirName}.${ext}`),
+			);
+			thumbnail = `thumbnails/${dirName}.${ext}`;
 		}
 
 		const rawDate = data.date;
