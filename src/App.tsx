@@ -57,8 +57,8 @@ function App() {
 								rel="noopener noreferrer"
 								className="flex gap-4 py-4 hover:opacity-70"
 							>
-								{showThumbnails && (
-									slide.thumbnail ? (
+								{showThumbnails &&
+									(slide.thumbnail ? (
 										<div
 											className="w-32 h-20 rounded flex-shrink-0 bg-[var(--bg)] border border-[var(--border)]"
 											style={{
@@ -70,8 +70,7 @@ function App() {
 										/>
 									) : (
 										<div className="w-32 h-20 bg-[var(--border)] rounded flex-shrink-0" />
-									)
-								)}
+									))}
 								<div className="flex flex-col justify-center gap-1">
 									<p className="text-base font-medium text-[var(--text-h)]">
 										{slide.title}
