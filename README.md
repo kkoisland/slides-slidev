@@ -52,6 +52,17 @@ Move the slide directory outside of `slides/` (e.g., to `archive/`).
 - `avatar.png` is synced to all slide `public/` directories on every `pnpm generate`
 - Slide list is sorted by date (newest first), which determines dev server port assignment (3030, 3031, ...)
 
+## Using This as Your Own Slide List
+
+Want to manage your own Slidev presentations the same way?
+
+1. Fork this repository
+2. Remove slides under `slides/` (keep `slides/_template/`)
+3. Replace or delete `slides/_template/public/avatar.png`
+4. Update `vite.config.ts` — change `base` to match your GitHub Pages URL
+5. Update `.github/workflows/deploy.yml` if needed
+6. Run `pnpm new-slide <your-slide>` to create your first slide
+
 ## Build
 
 ```bash
