@@ -195,8 +195,8 @@ description: "PROJECT_DESCRIPTION"
       <p class="mt-1">GITHUB_URL</p>
     </div>
     <div>
-      <p class="font-bold">✏️ CLOSING_NOTE_TITLE</p>
-      <p class="mt-1">CLOSING_NOTE_BODY</p>
+      <p class="font-bold">✏️ Hand-drawn diagrams</p>
+      <p class="mt-1">excalidraw-animate (OSS contributor)</p>
     </div>
   </div>
   <img :src="'/qr-code.png'" style="height: 200px" />

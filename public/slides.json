@@ -1,12 +1,21 @@
 [
 	{
+		"title": "test",
+		"author": "Keiko Higuchi",
+		"date": "2026-04-20",
+		"description": "PROJECT_DESCRIPTION",
+		"thumbnail": "",
+		"url": "/slides/test",
+		"port": 3030
+	},
+	{
 		"title": "slides-slidev",
 		"author": "Keiko Higuchi",
 		"date": "2026-04-19",
 		"description": "A slide list app built with React + Vite, managing Slidev presentations in one repository",
 		"thumbnail": "thumbnails/slides-slidev.png",
 		"url": "/slides/slides-slidev",
-		"port": 3030
+		"port": 3031
 	},
 	{
 		"title": "stable-context-map",
@@ -15,7 +24,7 @@
 		"description": "A Map App That Preserves Your Viewing Context",
 		"thumbnail": "thumbnails/stable-context-map.png",
 		"url": "/slides/stable-context-map",
-		"port": 3031
+		"port": 3032
 	},
 	{
 		"title": "Slidev Start 1",
@@ -24,7 +33,7 @@
 		"description": "Slidev starter template from github.com/leochiu-a/slidev-workspace-starter",
 		"thumbnail": "",
 		"url": "/slides/slidev-starter-1",
-		"port": 3032
+		"port": 3033
 	},
 	{
 		"title": "Test Slide",
@@ -33,6 +42,6 @@
 		"description": "excalidraw-animate and excalidraw-claymate demo",
 		"thumbnail": "thumbnails/slides-test.svg",
 		"url": "/slides/slides-test",
-		"port": 3033
+		"port": 3034
 	}
 ]
