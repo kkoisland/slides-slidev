@@ -109,28 +109,27 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
 
 # Showcase #1: Slide List
 
-<div class="flex gap-8 mt-4">
-  <div class="flex-1 space-y-4 text-lg">
-    <p>📋 All presentations listed in one place</p>
-    <p>🌙 Dark mode toggle</p>
-    <p>🖼️ Show thumbnails for visual overview</p>
-    <p>📄 Hide thumbnails for a compact, scannable list</p>
-  </div>
-  <img :src="'/screenshot-list.png'" style="height: 220px" />
-  <img :src="'/screenshot-list-no-thumbnail.png'" style="height: 220px" />
+<div class="mt-4 space-y-4 text-lg">
+  <p>📋 All presentations listed in one place &nbsp; 🌙 Dark mode toggle</p>
+  <p>🖼️ Show thumbnails for visual overview &nbsp; 📄 Hide thumbnails for a compact, scannable list</p>
+</div>
+<div class="flex gap-4 mt-4">
+  <img :src="'/screenshot-list.png'" style="height: 240px" />
+  <img :src="'/screenshot-list-no-thumbnail.png'" style="height: 240px" />
 </div>
 
 ---
 
 # Showcase #2: Adding a New Slide
 
-<div class="flex gap-8 mt-4">
-  <img :src="'/screenshot-new-slide.png'" style="height: 300px" />
-  <div class="flex-1 space-y-4 text-lg">
+<div class="flex gap-8 mt-4 items-start">
+  <div class="space-y-4 text-lg">
     <p>1️⃣ <code>pnpm new-slide my-talk</code></p>
     <p>2️⃣ <code>pnpm generate</code></p>
-    <p>3️⃣ Appears in the list immediately</p>
+    <p>3️⃣ <code>pnpm dev</code></p>
+    <p>4️⃣ Appears in the list!</p>
   </div>
+  <img :src="'/screenshot-new-slide.png'" style="width: 50%; object-fit: contain" />
 </div>
 
 ---
@@ -174,7 +173,7 @@ const base = import.meta.env.BASE_URL
 # Architecture
 
 <div class="flex justify-center mt-4">
-  <img :src="'/architecture.svg'" style="max-height: 420px" />
+  <img :src="'/architecture.png'" style="max-height: 420px" />
 </div>
 
 ---
@@ -228,8 +227,16 @@ const base = import.meta.env.BASE_URL
       <p class="font-bold">⭐ Want to use it?</p>
       <p class="mt-1">Fork the repo, replace slides with yours, swap avatar.png!</p>
     </div>
+    <div>
+      <p class="font-bold">✏️ Hand-drawn diagrams</p>
+      <p class="mt-1">excalidraw-animate (OSS contributor)</p>
+    </div>
   </div>
   <img :src="'/qr-code.png'" style="height: 200px" />
+</div>
+
+<div class="absolute bottom-8 left-8">
+  <p class="text-xl">Try slides-slidev for your own presentations!</p>
 </div>
 
 <div class="absolute bottom-8 right-8 flex items-center gap-2">

@@ -23,7 +23,7 @@ function App() {
 	}, [isDark]);
 
 	return (
-		<div className="max-w-2xl mx-auto px-4 py-8">
+		<div className="max-w-4xl mx-auto px-4 py-8">
 			<header className="flex justify-between items-center mb-8">
 				<h1 className="text-xl font-medium text-[var(--text-h)]">Slides</h1>
 				<div className="flex gap-2">
@@ -75,12 +75,21 @@ function App() {
 									<p className="text-base font-medium text-[var(--text-h)]">
 										{slide.title}
 									</p>
-									<p className="text-sm text-[var(--text)]">
-										{slide.author} · {slide.date}
-									</p>
-									{slide.description && (
+									{showThumbnails ? (
+										<>
+											<p className="text-sm text-[var(--text)]">
+												{slide.author} · {slide.date}
+											</p>
+											{slide.description && (
+												<p className="text-sm text-[var(--text)]">
+													{slide.description}
+												</p>
+											)}
+										</>
+									) : (
 										<p className="text-sm text-[var(--text)]">
-											{slide.description}
+											{slide.author} · {slide.date}
+											{slide.description && ` · ${slide.description}`}
 										</p>
 									)}
 								</div>
