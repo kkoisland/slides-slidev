@@ -4,6 +4,7 @@ title: stable-context-map
 author: Keiko Higuchi
 date: "2026-04-18"
 description: "A Map App That Preserves Your Viewing Context"
+routerMode: hash
 ---
 
 <div class="flex items-center gap-8 h-full">

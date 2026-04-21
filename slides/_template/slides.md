@@ -4,6 +4,7 @@ title: PROJECT_NAME
 author: Keiko Higuchi
 date: "SLIDE_DATE"
 description: "PROJECT_DESCRIPTION"
+routerMode: hash
 ---
 
 <div class="flex items-center gap-8 h-full">
