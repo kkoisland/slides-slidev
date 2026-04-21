@@ -59,7 +59,7 @@ routerMode: hash
 
 <p class="mt-8">→ So I built my own solution</p>
 
-<p class="mt-8 font-bold">Built with ❤️ for the React community</p>
+<p class="mt-8 font-bold">Built for my own workflow — and open to fork!</p>
 
 ---
 

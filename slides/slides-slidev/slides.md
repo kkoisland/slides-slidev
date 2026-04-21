@@ -83,13 +83,13 @@ routerMode: hash
 
 <div class="mt-6 space-y-4 text-lg">
   <p>❌ No built-in index page for multiple presentations</p>
-  <p>❌ Scattered across separate repos — hard to find</p>
+  <p>❌ Existing tools I found were Vue-based and hard to customize (layout, size, etc.)</p>
   <p>❌ No single URL to share all slides</p>
 </div>
 
 <p class="mt-8">→ So I built my own solution</p>
 
-<p class="mt-8 font-bold">Built with ❤️ for the React community</p>
+<p class="mt-8 font-bold">Built for my own workflow — and open to fork!</p>
 
 ---
 
