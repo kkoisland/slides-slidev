@@ -7,7 +7,7 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
 ---
 
 <div class="flex items-center gap-8 h-full">
-  <img :src="'/avatar.png'" style="height: 220px" />
+  <img :src="$base + 'avatar.png'" style="height: 220px" />
   <div>
     <h1 class="text-6xl font-bold">slides-slidev</h1>
     <p class="text-2xl mt-4">Slides with Slidev</p>
@@ -20,7 +20,7 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
 
 <div class="absolute bottom-8 right-8 flex items-center gap-2">
   <span class="text-gray-400">kkoisland (Keiko)</span>
-  <img :src="'/avatar.png'" style="height: 36px" />
+  <img :src="$base + 'avatar.png'" style="height: 36px" />
 </div>
 
 ---
@@ -41,7 +41,7 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
       <p><strong>GitHub:</strong> github.com/kkoisland</p>
     </div>
   </div>
-  <img :src="'/avatar.png'" style="height: 260px" />
+  <img :src="$base + 'avatar.png'" style="height: 260px" />
 </div>
 
 ---
@@ -58,7 +58,7 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
     </ul>
     <p class="mt-8 text-xl font-bold">One repo. One URL. All your slides.</p>
   </div>
-  <img :src="'/screenshot-list.png'" style="height: 320px" />
+  <img :src="$base + 'screenshot-list.png'" style="height: 320px" />
 </div>
 
 ---
@@ -114,8 +114,8 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
   <p>🖼️ Show thumbnails for visual overview &nbsp; 📄 Hide thumbnails for a compact, scannable list</p>
 </div>
 <div class="flex gap-4 mt-4">
-  <img :src="'/screenshot-list.png'" style="height: 240px" />
-  <img :src="'/screenshot-list-no-thumbnail.png'" style="height: 240px" />
+  <img :src="$base + 'screenshot-list.png'" style="height: 240px" />
+  <img :src="$base + 'screenshot-list-no-thumbnail.png'" style="height: 240px" />
 </div>
 
 ---
@@ -129,7 +129,7 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
     <p>3️⃣ <code>pnpm dev</code></p>
     <p>4️⃣ Appears in the list!</p>
   </div>
-  <img :src="'/screenshot-new-slide.png'" style="width: 50%; object-fit: contain" />
+  <img :src="$base + 'screenshot-new-slide.png'" style="width: 50%; object-fit: contain" />
 </div>
 
 ---
@@ -142,7 +142,7 @@ description: "A slide list app built with React + Vite, managing Slidev presenta
     <p>🚀 Opens the Slidev presentation in a new tab</p>
     <p>🌐 Works in both dev and production</p>
   </div>
-  <img :src="'/screenshot-open-slide.png'" style="height: 320px" />
+  <img :src="$base + 'screenshot-open-slide.png'" style="height: 320px" />
 </div>
 
 ---
@@ -173,7 +173,7 @@ const base = import.meta.env.BASE_URL
 # Architecture
 
 <div class="flex justify-center mt-4">
-  <img :src="'/architecture.png'" style="max-height: 420px" />
+  <img :src="$base + 'architecture.png'" style="max-height: 420px" />
 </div>
 
 ---
@@ -232,7 +232,7 @@ const base = import.meta.env.BASE_URL
       <p class="mt-1">excalidraw-animate (OSS contributor)</p>
     </div>
   </div>
-  <img :src="'/qr-code.png'" style="height: 200px" />
+  <img :src="$base + 'qr-code.png'" style="height: 200px" />
 </div>
 
 <div class="absolute bottom-8 left-8">
@@ -241,7 +241,7 @@ const base = import.meta.env.BASE_URL
 
 <div class="absolute bottom-8 right-8 flex items-center gap-2">
   <span class="text-gray-400">kkoisland (Keiko)</span>
-  <img :src="'/avatar.png'" style="height: 36px" />
+  <img :src="$base + 'avatar.png'" style="height: 36px" />
 </div>
 
 ---

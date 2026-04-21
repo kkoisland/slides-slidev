@@ -7,7 +7,7 @@ description: "PROJECT_DESCRIPTION"
 ---
 
 <div class="flex items-center gap-8 h-full">
-  <img :src="'/logo.png'" style="height: 220px" />
+  <img :src="$base + 'logo.png'" style="height: 220px" />
   <div>
     <h1 class="text-6xl font-bold">PROJECT_NAME</h1>
     <p class="text-2xl mt-4">PROJECT_DESCRIPTION</p>
@@ -20,7 +20,7 @@ description: "PROJECT_DESCRIPTION"
 
 <div class="absolute bottom-8 right-8 flex items-center gap-2">
   <span class="text-gray-400">kkoisland (Keiko)</span>
-  <img :src="'/avatar.png'" style="height: 36px" />
+  <img :src="$base + 'avatar.png'" style="height: 36px" />
 </div>
 
 ---
@@ -41,7 +41,7 @@ description: "PROJECT_DESCRIPTION"
       <p><strong>GitHub:</strong> github.com/kkoisland</p>
     </div>
   </div>
-  <img :src="'/avatar.png'" style="height: 260px" />
+  <img :src="$base + 'avatar.png'" style="height: 260px" />
 </div>
 
 ---
@@ -74,7 +74,7 @@ description: "PROJECT_DESCRIPTION"
     </ul>
     <p class="mt-8 text-xl font-bold">TAGLINE</p>
   </div>
-  <img :src="'/screenshot-what-is.png'" style="height: 320px" />
+  <img :src="$base + 'screenshot-what-is.png'" style="height: 320px" />
 </div>
 
 ---
@@ -102,7 +102,7 @@ description: "PROJECT_DESCRIPTION"
     <p>SHOWCASE_POINT_2</p>
     <p>SHOWCASE_POINT_3</p>
   </div>
-  <img :src="'/screenshot-showcase-1.png'" style="height: 320px" />
+  <img :src="$base + 'screenshot-showcase-1.png'" style="height: 320px" />
 </div>
 
 ---
@@ -110,7 +110,7 @@ description: "PROJECT_DESCRIPTION"
 # Showcase #2: SHOWCASE_TITLE_2
 
 <div class="flex gap-8 mt-4">
-  <img :src="'/screenshot-showcase-2.png'" style="height: 340px" />
+  <img :src="$base + 'screenshot-showcase-2.png'" style="height: 340px" />
   <div class="flex-1 space-y-4 text-lg">
     <p>SHOWCASE_POINT_1</p>
     <p>SHOWCASE_POINT_2</p>
@@ -128,8 +128,8 @@ description: "PROJECT_DESCRIPTION"
     <p>SHOWCASE_POINT_2</p>
     <p>SHOWCASE_POINT_3</p>
   </div>
-  <img :src="'/screenshot-showcase-3a.png'" style="height: 300px" />
-  <img :src="'/screenshot-showcase-3b.png'" style="height: 300px" />
+  <img :src="$base + 'screenshot-showcase-3a.png'" style="height: 300px" />
+  <img :src="$base + 'screenshot-showcase-3b.png'" style="height: 300px" />
 </div>
 
 ---
@@ -147,7 +147,7 @@ description: "PROJECT_DESCRIPTION"
       <li>ARCH_POINT_3</li>
     </ul>
   </div>
-  <img :src="'/diagram-architecture.png'" style="height: 320px" />
+  <img :src="$base + 'diagram-architecture.png'" style="height: 320px" />
 </div>
 
 ---
@@ -199,7 +199,7 @@ description: "PROJECT_DESCRIPTION"
       <p class="mt-1">excalidraw-animate (OSS contributor)</p>
     </div>
   </div>
-  <img :src="'/qr-code.png'" style="height: 200px" />
+  <img :src="$base + 'qr-code.png'" style="height: 200px" />
 </div>
 
 <div class="absolute bottom-8 left-8">
@@ -208,5 +208,5 @@ description: "PROJECT_DESCRIPTION"
 
 <div class="absolute bottom-8 right-8 flex items-center gap-2">
   <span class="text-gray-400">kkoisland (Keiko)</span>
-  <img :src="'/avatar.png'" style="height: 36px" />
+  <img :src="$base + 'avatar.png'" style="height: 36px" />
 </div>
