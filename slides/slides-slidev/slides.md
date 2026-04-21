@@ -4,6 +4,7 @@ title: slides-slidev
 author: Keiko Higuchi
 date: "2026-04-19"
 description: "A slide list app built with React + Vite, managing Slidev presentations in one repository"
+routerMode: hash
 ---
 
 <div class="flex items-center gap-8 h-full">
