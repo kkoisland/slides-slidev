@@ -1,5 +1,7 @@
 # slides-slidev
 
+📊 For a visual overview of this project, see the [slides](https://www.kkoisland.com/slides-slidev/slides/slides-slidev/).
+
 A slide list app built with React + Vite, managing Slidev presentations in one repository.
 
 🌐 **[https://www.kkoisland.com/slides-slidev/](https://www.kkoisland.com/slides-slidev/)**
