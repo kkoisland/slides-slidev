@@ -73,7 +73,7 @@ routerMode: hash
   <p>📤 Export to PDF, PNG, or host as a web app</p>
 </div>
 
-<p class="mt-8">→ <a href="https://sli.dev">sli.dev</a></p>
+<p class="mt-8">→ <a href="https://sli.dev">sli.dev: https://sli.dev</a></p>
 
 ---
 
@@ -125,12 +125,12 @@ routerMode: hash
 
 <div class="flex gap-8 mt-4 items-start">
   <div class="space-y-4 text-lg">
-    <p>1️⃣ <code>pnpm new-slide my-talk</code></p>
+    <p>1️⃣ <code>pnpm new-slide test</code></p>
     <p>2️⃣ <code>pnpm generate</code></p>
     <p>3️⃣ <code>pnpm dev</code></p>
     <p>4️⃣ Appears in the list!</p>
   </div>
-  <img :src="$base + 'screenshot-new-slide.png'" style="width: 50%; object-fit: contain" />
+  <img :src="$base + 'screenshot-new-slide.png'" style="width: 50%; height: 320px; object-fit: cover; object-position: top" />
 </div>
 
 ---
