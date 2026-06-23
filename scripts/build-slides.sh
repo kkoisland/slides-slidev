@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 ROOT=$(pwd)
+  pnpm exec slidev build slides/doc-writer/slides.md --base /slides-slidev/slides/doc-writer/ --out $ROOT/dist/slides/doc-writer
   pnpm exec slidev build slides/image-notes/slides.md --base /slides-slidev/slides/image-notes/ --out $ROOT/dist/slides/image-notes
   pnpm exec slidev build slides/slides-slidev/slides.md --base /slides-slidev/slides/slides-slidev/ --out $ROOT/dist/slides/slides-slidev
   pnpm exec slidev build slides/stable-context-map/slides.md --base /slides-slidev/slides/stable-context-map/ --out $ROOT/dist/slides/stable-context-map
