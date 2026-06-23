@@ -69,7 +69,15 @@ function App() {
 											}}
 										/>
 									) : (
-										<div className="w-32 h-20 bg-[var(--border)] rounded flex-shrink-0" />
+										<div
+											className="w-32 h-20 rounded flex-shrink-0 bg-[var(--bg)] border border-[var(--border)]"
+											style={{
+												backgroundImage: `url(${import.meta.env.BASE_URL}avatar.png)`,
+												backgroundSize: "contain",
+												backgroundRepeat: "no-repeat",
+												backgroundPosition: "center",
+											}}
+										/>
 									))}
 								<div className="flex flex-col justify-center gap-1">
 									<p className="text-base font-medium text-[var(--text-h)]">

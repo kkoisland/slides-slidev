@@ -16,6 +16,10 @@ const thumbnailsDir = resolve("public/thumbnails");
 const templateAvatarPath = resolve("slides/_template/public/avatar.png");
 mkdirSync(thumbnailsDir, { recursive: true });
 
+if (existsSync(templateAvatarPath)) {
+	copyFileSync(templateAvatarPath, resolve("public/avatar.png"));
+}
+
 const slides = [];
 
 for (const dirName of readdirSync(slidesDir)) {

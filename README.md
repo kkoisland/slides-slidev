@@ -36,13 +36,14 @@ pnpm dev
 
 - `slides.json` is auto-generated but should be committed so `pnpm dev` works without running generate first
 - `slides/_template/` is excluded from the slide list automatically
-- `avatar.png` is synced to all slide `public/` directories on every `pnpm generate`
+- `avatar.png` is synced to all slide `public/` directories and the app's root `public/` on every `pnpm generate`
 - Slide list is sorted by date (newest first), which determines dev server port assignment (3030, 3031, ...)
 
 ## Thumbnail
 
 Place a file named `thumbnail.*` (any extension: png, jpg, svg, etc.) in `slides/<slide-name>/public/`.
 `pnpm generate` will automatically copy it to `public/thumbnails/` and update `slides.json`.
+Slides without a thumbnail show your avatar in the list instead.
 
 ## Archiving Old Slides
 
