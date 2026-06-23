@@ -68,11 +68,11 @@ routerMode: hash
 <div class="flex gap-8 mt-4">
   <div class="flex-1">
     <p class="text-lg">WHAT_IS_DESCRIPTION</p>
-    <ul class="mt-6 space-y-3 text-lg">
-      <li>🔹 FEATURE_1</li>
-      <li>🔹 FEATURE_2</li>
-      <li>🔹 FEATURE_3</li>
-    </ul>
+    <div class="mt-6 space-y-3 text-lg">
+      <p>🔹 FEATURE_1</p>
+      <p>🔹 FEATURE_2</p>
+      <p>🔹 FEATURE_3</p>
+    </div>
     <p class="mt-8 text-xl font-bold">TAGLINE</p>
   </div>
   <img :src="$base + 'screenshot-what-is.png'" style="height: 320px" />
